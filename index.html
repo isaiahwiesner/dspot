@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSpot</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+  <link rel="icon" href="./img/favicon.ico">
+  <meta>
+</head>
+<body>
+  <div class="header">
+    <a href="https://drive.google.com/uc?export=download&id=1pMdYtLZCgmpXp6-tjI6jzcXo7novvBRm" target="_blank">
+      <p>Download the modpack</p>
+      <i class="fa fa-file-arrow-down"></i>
+    </a>
+  </div>
+  <div class="navbar">
+    <img src="./img/logo.png" class="nav-logo" alt="DSpot Logo" />
+    <div class="search-container">
+      <form class="search" id="search">
+        <input type="text" id="searchbar" autocomplete="off" placeholder="Search mods" />
+        <button type="submit" class="submitsearch">
+          <i class="fa fa-magnifying-glass"></i>
+        </button>
+        <button id="clear" class="clear-btn hidden" type="button">
+          <i class="fa fa-x"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mod-container" id="mod-container"></div>
+</body>
+<script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,147 @@
+:root {
+  --orange: #ee7125;
+  --lightgray: #f5f5f5;
+  --gray: #999999;
+  --link: #3e7697;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--lightgray);
+}
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  background-color: var(--orange);
+  display: grid;
+  place-items: center;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+}
+.header a:hover p {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: white;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  padding: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1rem;
+}
+.nav-logo {
+  height: 4rem;
+  width: auto;
+}
+.navbar .search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.navbar .search {
+  display: grid;
+  grid-template-columns: 1fr 2rem;
+  background-color: var(--gray);
+  border: 2px solid var(--gray);
+  gap: 2px;
+  position: relative;
+  height: 3rem;
+}
+.navbar .search input {
+  padding: .75rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.navbar .search button.submitsearch {
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.navbar .search button.clear-btn {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  place-items: center;
+  top: .5rem;
+  right: 2.5rem;
+  background-color: var(--lightgray);
+  color: var(--gray);
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+.mod-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem 3rem;
+}
+
+.mod-display {
+  background-color: white;
+  border: 2px solid var(--gray);
+  border-radius: .5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.mod-display .mod-img {
+  width: 4rem;
+  height: auto;
+}
+.mod-display .mod-info {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.mod-display .mod-link {
+  color: var(--link);
+  text-decoration: none;
+}
+.mod-display .mod-link:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+  .mod-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+}
