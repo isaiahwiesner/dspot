@@ -53,6 +53,8 @@ body {
 .nav-logo {
   height: 4rem;
   width: auto;
+  background-image: url('../img/logo.png');
+  background-size: contain;
 }
 .navbar .search-container {
   display: flex;
