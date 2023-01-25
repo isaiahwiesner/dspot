@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="og:image" content="https://izzzzthewiz.github.io/dspot/img/logo.png">
   <meta name="theme-color" content="#ee7125">
   <meta name="description" content="DSpot Modpack for Fabric">
+  <!-- Title -->
   <title>DSpot</title>
+  <!-- Load CSS -->
   <link rel="stylesheet" href="./css/main.css">
+  <!-- Load FontAwesome icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+  <!-- Icon -->
   <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
+  <!-- Header -->
   <div class="header">
+    <!-- Download link -->
     <a href="https://drive.google.com/uc?export=download&id=1pMdYtLZCgmpXp6-tjI6jzcXo7novvBRm" target="_blank">
       <p>Download the modpack</p>
       <i class="fa fa-file-arrow-down"></i>
     </a>
+    <!-- Divider (hidden for mobile) -->
     <p class="divider">|</p>
+    <!-- Download link -->
     <a href="https://drive.google.com/uc?export=download&id=1jZNGMzRmblolSEzCVPjvx2stfjC4M92q" target="_blank">
       <p>Download server mods</p>
       <i class="fa fa-file-arrow-down"></i>
     </a>
   </div>
+  <!-- Navbar -->
   <div class="navbar">
+    <!-- Logo -->
     <div class="nav-logo" alt="DSpot Logo"></div>
+    <!-- Search container -->
     <div class="search-container">
+      <!-- Search form -->
       <form class="search" id="search">
+        <!-- Search input -->
         <input type="text" id="searchbar" autocomplete="off" placeholder="Search mods" />
+        <!-- Submit button -->
         <button type="submit" class="submitsearch">
           <i class="fa fa-magnifying-glass"></i>
         </button>
+        <!-- Clear button -->
         <button id="clear" class="clear-btn hidden" type="button">
           <i class="fa fa-x"></i>
         </button>
@@ -39,7 +55,9 @@
     </div>
   </div>
 
+  <!-- Mod container (contains mod cards) -->
   <div class="mod-container" id="mod-container"></div>
 </body>
+<!-- Load JavaScript -->
 <script src="./js/index.js"></script>
 </html>

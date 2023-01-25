@@ -1,3 +1,4 @@
+// List of mods
 const mods = [
   {
     title: 'Architectury API (Fabric/Forge)',
@@ -116,108 +117,114 @@ const mods = [
   }
 ]
 
+// Variable for search text
 let search
 
+// Render mods based on search
 function render() {
+  // Get the mod container
   const modContainer = document.getElementById('mod-container')
 
+  // Reset the mod container
   modContainer.innerHTML = ''
 
+  // Elements to add to the mod container
   var elements = []
 
-  if (!search) {
-    mods.forEach((mod) => {
-      var container = document.createElement('div')
-      container.classList.add('mod-display')
-      
-      var img = document.createElement('img')
-      img.classList.add('mod-img')
-      img.setAttribute('src', mod.image)
-      container.append(img)
+  // Mods to add (all by default)
+  var searchedMods = [...mods]
+  // Filters mods with the search string in its name (if it is not empty)
+  if (search) searchedMods = mods.filter(m => m.title.toLowerCase().includes(search.toLowerCase()))
 
-      var info = document.createElement('div')
-      info.classList.add('mod-info')
+  // Create each card and add it to the elements variable
+  searchedMods.forEach((mod) => {
+    // Create card
+    var container = document.createElement('div')
+    container.classList.add('mod-display')
+    
+    // Add image to card
+    var img = document.createElement('img')
+    img.classList.add('mod-img')
+    img.setAttribute('src', mod.image)
+    container.append(img)
 
-      var title = document.createElement('h2')
-      title.classList.add('mod-title')
-      title.innerText = mod.title
+    // Create info element to hold the title and link
+    var info = document.createElement('div')
+    info.classList.add('mod-info')
 
-      var link = document.createElement('a')
-      link.classList.add('mod-link')
-      link.setAttribute('href', mod.link)
-      link.setAttribute('target', '_blank')
-      link.innerText = mod.link
+    // Create the title element
+    var title = document.createElement('h2')
+    title.classList.add('mod-title')
+    title.innerText = mod.title
 
-      info.append(title)
-      info.append(link)
-      container.append(info)
+    // Create the link element
+    var link = document.createElement('a')
+    link.classList.add('mod-link')
+    link.setAttribute('href', mod.link)
+    link.setAttribute('target', '_blank')
+    link.innerText = mod.link
 
-      elements.push(container)
-    })
-  }
+    // Add the link and title to the info element
+    info.append(title)
+    info.append(link)
+    // Add the info element to the main container
+    container.append(info)
 
-  else {
-    mods.filter(m => m.title.toLowerCase().includes(search.toLowerCase())).forEach((mod) => {
-      var container = document.createElement('div')
-      container.classList.add('mod-display')
-      
-      var img = document.createElement('img')
-      img.classList.add('mod-img')
-      img.setAttribute('src', mod.image)
-      container.append(img)
+    // Add the whole element into the elements variable
+    elements.push(container)
+  })
 
-      var info = document.createElement('div')
-      info.classList.add('mod-info')
-
-      var title = document.createElement('h2')
-      title.classList.add('mod-title')
-      title.innerText = mod.title
-
-      var link = document.createElement('a')
-      link.classList.add('mod-link')
-      link.setAttribute('href', mod.link)
-      link.setAttribute('target', '_blank')
-      link.innerText = mod.link
-
-      info.append(title)
-      info.append(link)
-      container.append(info)
-
-      elements.push(container)
-    })
-  }
-
+  // Add the elements to the page
   elements.forEach((element) => {
     modContainer.append(element)
   })
 
 }
 
+// Called when the page is loaded
 function init() {
+  // Get the clear button in the search bar
   const clearBtn = document.getElementById('clear')
 
+  // Render the searched mods when the search is submitted
   document.forms[0].addEventListener('submit', (e) => {
+    // Stop page from refreshing
     e.preventDefault()
+    // Render mods
     render()
   })
   
+  // Listen for when character is typed
   document.forms[0].children[0].addEventListener('keyup', (e) => {
+    // Search is empty
     if (e.target.value == '') {
+      // Reset the search variable
       search = null
+      // Hide the clear button
       if (!clearBtn.classList.contains('hidden')) clearBtn.classList.add('hidden')
     }
+    // Search is not empty
     else {
+      // Set the search variable to the text in the search input
       search = e.target.value
+      // Reveal the clear button
       if (clearBtn.classList.contains('hidden')) clearBtn.classList.remove('hidden')
     }
   })
+  // Listen for when the clear button is clicked
   document.forms[0].children[2].addEventListener('click', () => {
+    // Reset the search input
     document.forms[0].children[0].value = ''
+    // Reset the search variable
     search = null
+    // Hide the clear button
     if (!clearBtn.classList.contains('hidden')) clearBtn.classList.add('hidden')
+    // Render mods
     render()
   })
 }
 
+// Initial render so the page does not load empty
 render()
+// Start listening for events
 init()
