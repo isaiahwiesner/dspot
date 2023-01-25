@@ -22,8 +22,11 @@ body {
   right: 0;
   height: 2rem;
   background-color: var(--orange);
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
 }
 .header a {
   color: white;
@@ -36,6 +39,9 @@ body {
 }
 .header a:hover p {
   text-decoration: underline;
+}
+.header .divider {
+  color: white;
 }
 
 .navbar {
@@ -145,5 +151,12 @@ body {
   .mod-container {
     grid-template-columns: 1fr;
     padding: 1rem 1rem;
+  }
+  .header {
+    flex-direction: column;
+    height: 4rem;
+  }
+  .header .divider {
+    display: none;
   }
 }
