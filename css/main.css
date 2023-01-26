@@ -45,10 +45,6 @@ body {
 .header a:hover p {
   text-decoration: underline;
 }
-/* Header divider */
-.header .divider {
-  color: white;
-}
 
 /* Navigation bar */
 .navbar {
@@ -163,12 +159,5 @@ body {
   .mod-container {
     grid-template-columns: 1fr;
     padding: 1rem 1rem;
-  }
-  .header {
-    flex-direction: column;
-    height: 4rem;
-  }
-  .header .divider {
-    display: none;
   }
 }

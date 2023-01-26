@@ -11,6 +11,11 @@ const mods = [
     image: 'https://media.forgecdn.net/avatars/thumbnails/425/424/64/64/637654319432130352.png'
   },
   {
+    title: 'Basic Shields [Fabric]',
+    link: 'https://www.curseforge.com/minecraft/mc-mods/basic-shields-fabric',
+    image: 'https://media.forgecdn.net/avatars/thumbnails/475/725/64/64/637768083099063556.png'
+  },
+  {
     title: 'BCLib',
     link: 'https://www.curseforge.com/minecraft/mc-mods/bclib',
     image: 'https://media.forgecdn.net/avatars/thumbnails/396/271/64/64/637595638220205053.png'
@@ -44,6 +49,11 @@ const mods = [
     title: 'Fabric Language Kotlin',
     link: 'https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin',
     image: 'https://media.forgecdn.net/avatars/thumbnails/181/492/64/64/636800855682272538.png'
+  },
+  {
+    title: 'Fabric Shield Lib',
+    link: 'https://www.curseforge.com/minecraft/mc-mods/fabric-shield-lib',
+    image: 'https://media.forgecdn.net/avatars/thumbnails/270/145/64/64/637244079425307064.png'
   },
   {
     title: 'FPS - Display',
