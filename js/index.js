@@ -41,6 +41,11 @@ const mods = [
     image: 'https://media.forgecdn.net/avatars/thumbnails/282/467/64/64/637289313020452406.png'
   },
   {
+    title: 'Expanded Storage',
+    link: 'https://www.curseforge.com/minecraft/mc-mods/expanded-storage',
+    image: 'https://media.forgecdn.net/avatars/thumbnails/648/548/64/64/638050146344021856.png'
+  },
+  {
     title: 'Fabric API',
     link: 'https://www.curseforge.com/minecraft/mc-mods/fabric-api',
     image: 'https://media.forgecdn.net/avatars/thumbnails/185/822/64/64/636829723898798601.png'
@@ -64,11 +69,6 @@ const mods = [
     title: 'Industrial Revolution',
     link: 'https://www.curseforge.com/minecraft/mc-mods/industrual-revolution',
     image: 'https://media.forgecdn.net/avatars/thumbnails/292/719/64/64/637326741883981172.png'
-  },
-  {
-    title: '[Fabric] Iron Chests',
-    link: 'https://www.curseforge.com/minecraft/mc-mods/iron-chests-fabric',
-    image: 'https://media.forgecdn.net/avatars/thumbnails/294/612/64/64/637333797757444007.png'
   },
   {
     title: 'Light Overlay (RIft/Forge/Fabric)',
