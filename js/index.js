@@ -86,11 +86,6 @@ const mods = [
     image: 'https://media.forgecdn.net/avatars/thumbnails/545/929/64/64/637880449229790304.png'
   },
   {
-    title: 'Oh The Biomes You\'ll Go Refabricated',
-    link: 'https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric',
-    image: 'https://media.forgecdn.net/avatars/thumbnails/281/230/64/64/637284761944802812.png'
-  },
-  {
     title: 'The One Probe Fabric',
     link: 'https://www.curseforge.com/minecraft/mc-mods/the-one-probe-fabric',
     image: 'https://media.forgecdn.net/avatars/thumbnails/496/316/64/64/637810794394638170.png'
@@ -99,11 +94,6 @@ const mods = [
     title: 'Roughly Enough Items Fabric/Forge (REI)',
     link: 'https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items',
     image: 'https://media.forgecdn.net/avatars/thumbnails/282/25/64/64/637287701215436754.png'
-  },
-  {
-    title: 'TerraBlender (Fabric)',
-    link: 'https://www.curseforge.com/minecraft/mc-mods/terrablender-fabric',
-    image: 'https://media.forgecdn.net/avatars/thumbnails/478/13/64/64/637773349975382748.png'
   },
   {
     title: 'Traveler\'s Backpack [Fabric]',
