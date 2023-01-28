@@ -71,6 +71,11 @@ const mods = [
     image: 'https://media.forgecdn.net/avatars/thumbnails/292/719/64/64/637326741883981172.png'
   },
   {
+    title: 'Iris Shaders',
+    link: 'https://www.curseforge.com/minecraft/mc-mods/irisshaders',
+    image: 'https://media.forgecdn.net/avatars/thumbnails/640/757/64/64/638042285668346158.jpeg'
+  },
+  {
     title: 'Light Overlay (RIft/Forge/Fabric)',
     link: 'https://www.curseforge.com/minecraft/mc-mods/light-overlay',
     image: 'https://media.forgecdn.net/avatars/thumbnails/208/146/64/64/636972456902715264.png'
@@ -94,6 +99,11 @@ const mods = [
     title: 'Roughly Enough Items Fabric/Forge (REI)',
     link: 'https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items',
     image: 'https://media.forgecdn.net/avatars/thumbnails/282/25/64/64/637287701215436754.png'
+  },
+  {
+    title: 'Sodium',
+    link: 'https://www.curseforge.com/minecraft/mc-mods/sodium',
+    image: 'https://media.forgecdn.net/avatars/thumbnails/284/773/64/64/637298471098686391.png'
   },
   {
     title: 'Traveler\'s Backpack [Fabric]',
